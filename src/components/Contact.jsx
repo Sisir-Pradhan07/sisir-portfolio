@@ -1,6 +1,25 @@
-import { FaGithub, FaLinkedin, FaFilePdf } from "react-icons/fa";
-
+import { useState } from "react";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaFilePdf,
+  FaCopy,
+  FaCheck,
+} from "react-icons/fa";
 function Contact() {
+  const [copied, setCopied] = useState(false);
+
+const copyEmail = async () => {
+  await navigator.clipboard.writeText(
+    "pradhansisir789@gmail.com"
+  );
+
+  setCopied(true);
+
+  setTimeout(() => {
+    setCopied(false);
+  }, 2000);
+};
   return (
     <section id="contact" className="contact">
       <h2>Let's Connect</h2>
@@ -12,16 +31,24 @@ function Contact() {
 <p className="contact-note">
     Looking forward to connecting with you.
   </p>
-<p className="contact-email">
+<div className="contact-email">
   <a
     href="https://mail.google.com/mail/?view=cm&fs=1&to=pradhansisir789@gmail.com"
-target="_blank"
-rel="noopener noreferrer"
+    target="_blank"
+    rel="noopener noreferrer"
     className="email-link"
   >
-    📧 pradhansisir789@gmail.com
+    📧&nbsp;pradhansisir789@gmail.com
   </a>
-</p>
+
+  <button
+    className="copy-email-btn"
+    onClick={copyEmail}
+    aria-label="Copy email"
+  >
+    {copied ? <FaCheck /> : <FaCopy />}
+  </button>
+</div>
 
 
       <div className="contact-links">

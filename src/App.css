@@ -3148,3 +3148,45 @@ button:focus-visible{
   outline: none;
   box-shadow: none;
 }
+
+/* Email copy*/
+.contact-email{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+}
+
+.copy-email-btn{
+    width:34px;
+    height:34px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:none;
+    border-radius:10px;
+
+    background:rgba(56,189,248,.12);
+    color:#38bdf8;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+}
+
+@media (hover:hover){
+
+.copy-email-btn:hover{
+    background:rgba(56,189,248,.22);
+    transform:scale(1.08);
+}
+
+}
+
+.copy-email-btn:focus,
+.copy-email-btn:focus-visible{
+    outline:none;
+    box-shadow:none;
+}
