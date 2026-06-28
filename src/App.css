@@ -3190,3 +3190,29 @@ button:focus-visible{
     outline:none;
     box-shadow:none;
 }
+
+/* Tablet view*/
+@media (min-width: 769px) and (max-width: 1200px) {
+
+  .hero{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 110px 40px 60px;
+  }
+
+  .hero-image{
+    flex: 0 0 280px;
+  }
+
+  .hero-content{
+    flex: 1;
+    min-width: 320px;
+  }
+
+  .featured-project{
+    width: min(700px, 100%);
+    margin-top: 10px;
+  }
+
+}
