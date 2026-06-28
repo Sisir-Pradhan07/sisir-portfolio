@@ -32,19 +32,7 @@ useEffect(() => {
   return () =>
     window.removeEventListener("scroll", clearSelection);
 }, [isMobile]);
-useEffect(() => {
-  const clearFocus = () => {
-    if (document.activeElement instanceof HTMLElement) {
-      document.activeElement.blur();
-    }
-  };
-  window.addEventListener("pageshow", clearFocus);
-  window.addEventListener("focus", clearFocus);
-  return () => {
-    window.removeEventListener("pageshow", clearFocus);
-    window.removeEventListener("focus", clearFocus);
-  };
-}, []);
+
   return (
     <section id="home" className="hero">
       <div className="hero-image">

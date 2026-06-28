@@ -1806,13 +1806,13 @@ padding: 5px 10px;
     padding:80px 50px;
 }
 
-.social-icons a:focus,
+/* .social-icons a:focus,
 .social-icons a:focus-visible,
 .social-icons a:active {
   filter: none !important;
   transform: none !important;
   outline: none !important;
-}
+} */
 
 .social-icons img {
   display: block;
@@ -2230,13 +2230,13 @@ padding: 5px 10px;
 
 }
 
-/* POLISHING THROUGH HERO */
+/* POLISHING THROUGH HERO
 a:focus-visible,
 button:focus-visible{
     outline:2px solid #38bdf8;
     outline-offset:4px;
     border-radius:8px;
-}
+} */
 
 .social-icons a{
   display: inline-flex;
@@ -3128,7 +3128,7 @@ button:focus-visible{
   box-shadow:none;
 }
 
-/* resume flash*/
+/* resume flash */
 .hero-btn,
 .social-icons a {
   -webkit-tap-highlight-color: transparent;
