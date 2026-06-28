@@ -94,13 +94,31 @@ useEffect(() => {
           solutions using Python, SQL, Power BI, and Scikit-Learn.
         </p>
         <div className="hero-buttons">
-          <a
-            href="#projects"
-            className="hero-btn primary"
-          >
-            <FaFolderOpen />
-            View Projects
-          </a>
+          <button
+  className="hero-btn primary"
+  onClick={() => {
+    const section = document.getElementById("projects");
+
+    if (section) {
+      const nav = document.querySelector("nav");
+      const navHeight = nav ? nav.offsetHeight : 80;
+
+      const y =
+        section.getBoundingClientRect().top +
+        window.pageYOffset -
+        navHeight -
+        15;
+
+      window.scrollTo({
+        top: y,
+        behavior: "smooth",
+      });
+    }
+  }}
+>
+  <FaFolderOpen />
+  View Projects
+</button>
           <a
             href="/Sisir_Pradhan_Resume_AIML_DA.pdf"
             target="_blank"

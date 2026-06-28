@@ -2237,6 +2237,11 @@ button:focus-visible{
     outline-offset:4px;
     border-radius:8px;
 } */
+.hero-btn{
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
 
 .social-icons a{
   display: inline-flex;
