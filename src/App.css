@@ -3112,3 +3112,7 @@ transition:opacity .4s ease;
 }
 
 }
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
