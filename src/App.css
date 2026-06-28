@@ -3118,7 +3118,12 @@ transition:opacity .4s ease;
 }
 
 a,
-button {
+button{
   -webkit-tap-highlight-color: transparent;
-  outline: none;
+}
+
+button:focus,
+button:focus-visible{
+  outline:none;
+  box-shadow:none;
 }
