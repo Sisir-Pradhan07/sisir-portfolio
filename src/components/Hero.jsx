@@ -71,7 +71,9 @@ useEffect(() => {
 />
     </a>
     <a
-  href="mailto:pradhansisir789@gmail.com"
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=pradhansisir789@gmail.com"
+target="_blank"
+rel="noopener noreferrer"
   aria-label="Email"
 >
 <img
