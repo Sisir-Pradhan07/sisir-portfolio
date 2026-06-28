@@ -1364,7 +1364,7 @@ margin:28px auto 0;
 
   .scroll-container{
     top:67px;
-    width:1.7px;
+    width:2px;
     height:calc(100vh - 67px);
   }
 
