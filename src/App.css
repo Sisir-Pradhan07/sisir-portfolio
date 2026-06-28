@@ -3127,3 +3127,19 @@ button:focus-visible{
   outline:none;
   box-shadow:none;
 }
+
+/* resume flash*/
+.hero-btn,
+.social-icons a {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  outline: none;
+}
+
+.hero-btn:focus,
+.hero-btn:focus-visible,
+.social-icons a:focus,
+.social-icons a:focus-visible {
+  outline: none;
+  box-shadow: none;
+}

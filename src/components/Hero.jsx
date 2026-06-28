@@ -33,6 +33,26 @@ useEffect(() => {
     window.removeEventListener("scroll", clearSelection);
 }, [isMobile]);
 useEffect(() => {
+  const removeFocus = () => {
+    if (document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  };
+
+  window.addEventListener("pageshow", removeFocus);
+  window.addEventListener("focus", removeFocus);
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) {
+      removeFocus();
+    }
+  });
+
+  return () => {
+    window.removeEventListener("pageshow", removeFocus);
+    window.removeEventListener("focus", removeFocus);
+  };
+}, []);
+useEffect(() => {
   const clearFocus = () => {
     if (document.activeElement instanceof HTMLElement) {
       document.activeElement.blur();
@@ -63,6 +83,9 @@ useEffect(() => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="GitHub"
+      onClick={(e) => {
+    e.currentTarget.blur();
+  }}
     >
       <img
   src="/images/github-logo.png"
@@ -75,6 +98,9 @@ useEffect(() => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="LinkedIn"
+      onClick={(e) => {
+    e.currentTarget.blur();
+  }}
     >
       <img
   src="/images/linkedin-logo.png"
