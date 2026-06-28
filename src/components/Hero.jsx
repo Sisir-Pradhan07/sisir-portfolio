@@ -65,9 +65,10 @@ useEffect(() => {
       aria-label="GitHub"
     >
       <img
-        src="/images/github-logo.png"
-        alt="GitHub"
-      />
+  src="/images/github-logo.png"
+  alt="GitHub"
+  className="social-icon"
+/>
     </a>
     <a
       href="https://www.linkedin.com/in/sisir-pradhan-b5032724a"
@@ -76,19 +77,20 @@ useEffect(() => {
       aria-label="LinkedIn"
     >
       <img
-        src="/images/linkedin-logo.png"
-        alt="LinkedIn"
-      />
+  src="/images/linkedin-logo.png"
+  alt="LinkedIn"
+  className="social-icon"
+/>
     </a>
     <a
   href="mailto:pradhansisir789@gmail.com"
   aria-label="Email"
 >
-  <img
-    src="/images/gmail-icon.png"
-    alt="Email"
-    className="email-logo"
-  />
+<img
+  src="/images/gmail-icon.png"
+  alt="Email"
+  className="social-icon gmail-icon"
+/>
 </a>
   </div>
 </div>
