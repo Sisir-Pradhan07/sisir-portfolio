@@ -7,6 +7,14 @@
   background: #38bdf8;
   color: #0f172a;
 }
+html {
+  cursor: default;
+}
+
+a,
+button {
+  cursor: pointer;
+}
 .about h2,
 .skills h2,
 .journey h2,
