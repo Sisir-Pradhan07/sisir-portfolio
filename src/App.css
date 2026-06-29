@@ -3228,3 +3228,14 @@ button:focus-visible{
   }
 
 }
+
+/* Mobile project*/
+.featured-mobile-description {
+  margin: 14px 0 18px;
+  color: #cbd5e1;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 100%;
+  font-weight: 400;
+}

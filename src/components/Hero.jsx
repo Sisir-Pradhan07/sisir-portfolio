@@ -200,6 +200,9 @@ global demand, and geopolitical indicators.
   </div>
   <div className="featured-mobile-content">
     <h3>Oil Price Prediction of India</h3>
+    <p className="featured-mobile-description">
+  Machine Learning model for forecasting Indian oil prices using Brent crude, USD-INR, global demand, and geopolitical indicators.
+</p>
     <div className="featured-mobile-tags">
       <span>Python</span>
       <span>ML</span>
