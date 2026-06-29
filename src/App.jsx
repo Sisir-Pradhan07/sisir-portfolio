@@ -33,6 +33,22 @@ useEffect(() => {
     clearTimeout(removeTimer);
   };
 }, []);
+useEffect(() => {
+  const pdfs = [
+    "/Certificates/Data Analytics Intern Certificate.pdf",
+    "/Certificates/Empowering Innovation with ESP32 IoT Certificate.pdf",
+    "/Certificates/NPTEL Data Analytics.pdf",
+    "/Certificates/NPTEL The Joy of Computing using Python.pdf",
+    "/Certificates/NPTEL Programming In Java.pdf",
+    "/Certificates/Python using AI workshop Certificate.pdf",
+  ];
+
+  pdfs.forEach((pdf) => {
+    fetch(pdf)
+      .then((res) => res.blob())
+      .catch(() => {});
+  });
+}, []);
   // Scroll Progress
   useEffect(() => {
     const handleScroll = () => {
