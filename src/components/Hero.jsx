@@ -32,7 +32,27 @@ useEffect(() => {
   return () =>
     window.removeEventListener("scroll", clearSelection);
 }, [isMobile]);
+const scrollToProjects = (e) => {
+  e.preventDefault();
 
+  const section = document.getElementById("projects");
+
+  if (section) {
+    const nav = document.querySelector("nav");
+    const navHeight = nav ? nav.offsetHeight : 80;
+
+    const y =
+      section.getBoundingClientRect().top +
+      window.pageYOffset -
+      navHeight -
+      15;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+  }
+};
   return (
     <section id="home" className="hero">
       <div className="hero-image">
@@ -132,7 +152,10 @@ rel="noopener noreferrer"
           </a>
         </div>
         <div className="hero-stats">
-          <a href="#projects">
+          <a
+  href="/"
+  onClick={scrollToProjects}
+>
             <FaFolderOpen />
             <span>3 Projects</span>
           </a>
@@ -172,9 +195,10 @@ global demand, and geopolitical indicators.
       <span>Regression</span>
     </div>
     <a
-      href="#projects"
-      className="featured-link"
-    >
+  href="/"
+  onClick={scrollToProjects}
+  className="featured-link"
+>
       <span>View Project</span>
       <FaArrowRight />
     </a>
@@ -210,9 +234,10 @@ global demand, and geopolitical indicators.
       <span>Regression</span>
     </div>
     <a
-      href="#projects"
-      className="featured-link"
-    >
+  href="/"
+  onClick={scrollToProjects}
+  className="featured-link"
+>
       View Project
       <FaArrowRight />
     </a>
