@@ -18,10 +18,7 @@ body{
   background:#0f172a;
   color:#fff;
 }
-.number{
-    opacity:0;
-    animation:fadeIn404 .9s ease-out forwards;
-}
+
 .container{
   min-height:100vh;
   display:flex;
@@ -37,8 +34,6 @@ h1{
   font-weight:800;
   letter-spacing:4px;
   color:#38bdf8;
-
-  opacity:0;
 
   text-shadow:
     0 0 8px rgba(56,189,248,.22),
@@ -171,7 +166,7 @@ to{
 }
 
 50%{
-    transform:translateY(-5px);
+    transform:translateY(-3px);
 }
 
 75%{
@@ -183,7 +178,7 @@ to{
 }
 
 }
-@keyframes fadeIn404{
+/* @keyframes fadeIn404{
 
 0%{
     opacity:0;
@@ -200,7 +195,7 @@ to{
     transform:translateY(0) scale(1);
 }
 
-}
+} */
 
 @keyframes float{
 
@@ -228,9 +223,7 @@ transform:translateY(0px);
 
 <div class="container">
 
-<div class="number">
     <h1>404</h1>
-</div>
 
 <h2>Oops! Page Not Found</h2>
 
