@@ -74,7 +74,7 @@ useEffect(() => {
   return <LoadingScreen fadeOut={fadeOut} />;
 }
  return (
-  <div className="app-content">
+  <main className="app-content">
       <div className="scroll-container">
        <div
   className="scroll-progress"
@@ -113,7 +113,7 @@ useEffect(() => {
       </Reveal>
 
       <Footer />
-    </div>
+    </main>
   );
 }
 
