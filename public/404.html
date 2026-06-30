@@ -18,7 +18,10 @@ body{
   background:#0f172a;
   color:#fff;
 }
-
+.number{
+    opacity:0;
+    animation:fadeIn404 .9s ease-out forwards;
+}
 .container{
   min-height:100vh;
   display:flex;
@@ -35,16 +38,16 @@ h1{
   letter-spacing:4px;
   color:#38bdf8;
 
+  opacity:0;
+
   text-shadow:
-    0 0 8px rgba(56,189,248,.25),
-    0 0 18px rgba(56,189,248,.15);
+    0 0 8px rgba(56,189,248,.22),
+    0 0 18px rgba(56,189,248,.12);
 
   animation:
-    float404 4s ease-in-out infinite,
     glow404 2.8s ease-in-out infinite alternate,
-    fadeIn404 1s ease-out;
+    float404 4.5s ease-in-out 1.2s infinite;
 }
-
 h2{
     opacity:0;
 animation:fadeText .7s ease forwards;
@@ -125,16 +128,22 @@ a:hover{
 
 @keyframes glow404{
 
-from{
-  text-shadow:
-    0 0 8px rgba(56,189,248,.20),
-    0 0 18px rgba(56,189,248,.10);
+0%{
+    text-shadow:
+      0 0 6px rgba(56,189,248,.18),
+      0 0 14px rgba(56,189,248,.10);
 }
 
-to{
-  text-shadow:
-    0 0 12px rgba(56,189,248,.40),
-    0 0 24px rgba(56,189,248,.20);
+50%{
+    text-shadow:
+      0 0 10px rgba(56,189,248,.28),
+      0 0 20px rgba(56,189,248,.16);
+}
+
+100%{
+    text-shadow:
+      0 0 8px rgba(56,189,248,.22),
+      0 0 16px rgba(56,189,248,.12);
 }
 
 }
@@ -153,25 +162,42 @@ to{
 }
 @keyframes float404{
 
-0%,100%{
-  transform:translateY(0px);
+0%{
+    transform:translateY(0);
+}
+
+25%{
+    transform:translateY(-2px);
 }
 
 50%{
-  transform:translateY(-8px);
+    transform:translateY(-5px);
+}
+
+75%{
+    transform:translateY(-2px);
+}
+
+100%{
+    transform:translateY(0);
 }
 
 }
 @keyframes fadeIn404{
 
-from{
-  opacity:0;
-  transform:translateY(20px) scale(.95);
+0%{
+    opacity:0;
+    transform:translateY(18px) scale(.96);
 }
 
-to{
-  opacity:1;
-  transform:translateY(0) scale(1);
+70%{
+    opacity:1;
+    transform:translateY(0) scale(1);
+}
+
+100%{
+    opacity:1;
+    transform:translateY(0) scale(1);
 }
 
 }
@@ -202,7 +228,9 @@ transform:translateY(0px);
 
 <div class="container">
 
-<h1>404</h1>
+<div class="number">
+    <h1>404</h1>
+</div>
 
 <h2>Oops! Page Not Found</h2>
 
