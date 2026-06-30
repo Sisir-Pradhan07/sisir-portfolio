@@ -1,16 +1,162 @@
-# React + Vite
+# 🌐 Sisir Pradhan | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio showcasing my journey in **Data Analytics** and **Machine Learning**. Built with **React** and **Vite**, featuring real-world projects, internships, certifications, and an interactive timeline.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 https://sisir-portfolio.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Portfolio Preview
 
-## Expanding the ESLint configuration
+> Add a screenshot here.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Portfolio Preview](./assets/home-page.png)
+
+---
+
+## ✨ Features
+
+- 🎨 Modern & Responsive UI
+- 📱 Mobile, Tablet & Desktop Optimized
+- 🚀 Interactive Journey Timeline
+- 📊 Featured Machine Learning Project
+- 💼 Internship & Certification Showcase
+- 📁 Project Gallery
+- 📄 Resume Download
+- 📬 Contact Section
+- 🔍 SEO Optimized
+- ⚡ Performance Optimized
+- ♿ Accessibility Improved
+- 🌙 Smooth Animations
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### Libraries
+
+- React Icons
+
+### Deployment
+
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+ ├── components/
+ ├── App.jsx
+ ├── App.css
+ └── main.jsx
+
+public/
+ ├── images/
+ ├── Certificates/
+ └── Resume/
+```
+
+---
+
+## 💼 Featured Projects
+
+### 🛢️ Oil Price Prediction of India
+
+Machine Learning regression model for forecasting Indian oil prices using:
+
+- Brent Crude Price
+- USD-INR Exchange Rate
+- Global Oil Demand
+- Geopolitical Indicators
+
+**Tech**
+
+- Python
+- Scikit-Learn
+- Pandas
+- NumPy
+- Matplotlib
+
+---
+
+### 🏏 IPL Dashboard
+
+Interactive Power BI dashboard providing insights into IPL player performances, centuries, and statistics.
+
+---
+
+### 📈 Inflation Prediction
+
+Machine Learning project focused on predicting inflation trends using historical economic indicators.
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/Sisir-Pradhan07/Sisir_Portofolio.git
+
+cd Sisir_Portofolio
+
+npm install
+
+npm run dev
+```
+
+---
+
+## 📱 Responsive Design
+
+Optimized for:
+
+- 💻 Desktop
+- 📱 Mobile
+- 📲 Tablet
+
+---
+
+## 📊 Lighthouse Scores
+
+| Metric | Score |
+|---------|------:|
+| Performance (Desktop) | 91 |
+| Performance (Mobile) | 71 |
+| Accessibility | 99 |
+| Best Practices | 100 |
+| SEO | 100 |
+
+---
+
+## 📬 Contact
+
+📧 pradhansisir789@gmail.com
+
+💼 LinkedIn
+
+https://www.linkedin.com/in/sisir-pradhan-b5032724a
+
+💻 GitHub
+
+https://github.com/Sisir-Pradhan07
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+⭐ If you like this portfolio, consider giving the repository a star.
