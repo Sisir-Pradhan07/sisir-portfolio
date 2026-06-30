@@ -19,10 +19,7 @@ const [fadeOut, setFadeOut] = useState(false);
 const [scrollProgress, setScrollProgress] = useState(0);
 
 // Loading Screen
-useEffect(() => {
-  window.history.scrollRestoration = "manual";
-  window.scrollTo(0, 0);
-}, []);
+
 useEffect(() => {
   const fadeTimer = setTimeout(() => {
     setFadeOut(true);
