@@ -14,7 +14,7 @@ import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 const [fadeOut, setFadeOut] = useState(false);
 const [scrollProgress, setScrollProgress] = useState(0);
 
