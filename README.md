@@ -10,8 +10,6 @@ A modern, responsive portfolio showcasing my journey in **Data Analytics** and *
 
 ## 📸 Portfolio Preview
 
-> Add a screenshot here.
-
 ![Portfolio Preview](./assets/home-page.png)
 
 ---
