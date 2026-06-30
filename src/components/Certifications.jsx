@@ -125,10 +125,10 @@ useEffect(() => {
   }}
 >
 
-            <h4 className="achievement-title">
+            <h3 className="achievement-title">
               {item.icon}
               <span>{item.title}</span>
-            </h4>
+            </h3>
 
             <p className="achievement-meta">
   {item.organization} • {item.date}
