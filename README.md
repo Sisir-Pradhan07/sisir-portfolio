@@ -104,7 +104,6 @@ Machine Learning project focused on predicting inflation trends using historical
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/Sisir-Pradhan07/Sisir_Portofolio.git
 
 cd Sisir_Portofolio
 
